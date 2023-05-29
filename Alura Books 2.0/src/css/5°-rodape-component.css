@@ -1,0 +1,33 @@
+.rodape {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: var(--azul-escuro);
+}
+
+.caixa__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo__Alura-img {
+    width: 50px;
+    margin-right: 15px;
+}
+
+.logo__Alura {
+    font-family: var(--font-secundaria);
+    font-size: 30px;
+    color: var(--branco);
+}
+
+.logo__negrito {
+    font-family: var(--font-secundaria);
+    font-size: 30px;    
+    color: var(--branco);
+}
+
+.logo_M {
+    width: 70px;
+}

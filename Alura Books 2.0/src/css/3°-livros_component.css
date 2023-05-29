@@ -1,0 +1,215 @@
+.livros {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+.livro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--rosa);
+}
+
+.livro__conteudo {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.livro__bloco-img {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    background-color: var(--branco);
+}
+
+.livro__bloco-descricao {
+    position: relative;
+    width: 60%;
+    margin-left: 10px;
+}
+
+.livro__img {
+    width: 100%;
+    
+}
+
+.livro__titulo {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--branco);
+}
+
+.livro__autor {
+    position: absolute;
+    top: 100px;
+    margin: 10px 5px 0 0;
+    font-size: 18px;
+    color: var(--branco);
+}
+
+.livro__preco {
+    position: absolute;
+    top: 150px;
+    margin: 7px 5px 13px 0;
+    font-size: 16px;
+    color: var(--branco);
+}
+
+.tags {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    width: 104px;
+    margin: 0 0 0 105px;
+    padding: 3px 10px;
+    text-align: center;
+    border: 1px solid var(--branco);
+    border-radius: 5px;
+    color: var(--branco);
+    background-color: var(--roxo-rosado);
+}
+
+.indisponivel {
+    opacity: 0.3;
+}
+
+/*---------------------------------------------==================================================---------------------------------------------*/
+/*---------------------------------------------------= ***---RESPONSIVIDADE LIVROS---**** =---------------------------------------------------*/
+/*---------------------------------------------==================================================---------------------------------------------*/
+
+@media screen and (min-width: 531px) {
+    .livro__titulo, .livro__autor, .livro__preco {
+        font-size: 20px;
+    }
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 749px) {
+    .livros {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .livro {
+        width: 718px;
+        height: 403px;
+    }
+
+    .livro__titulo, .livro__autor, .livro__preco {
+        font-size: 30px;
+    }
+
+    .livro__autor {
+        top: 180px
+    }
+
+    .livro__preco {
+        top: 240px
+    }
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 844px) {
+    .livros {
+        justify-content: center;
+    }
+
+    .livro {
+        width: 670px;
+        height: 370px;
+        padding: 16px;
+    }
+
+    .livro__titulo {
+        font-size: 30px;
+    }
+
+    .livro__autor {
+        margin-top: 50px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .livro__preco {
+        margin-top: 30px;
+        font-size: 25px;
+    }
+
+    .tags {
+        width: 200px;
+        height: 40px;
+        padding: 6px;
+    }
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 1024px) {
+    .livros { 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .livro {
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--rosa);
+        width: 325px;
+        height: 700px;
+        padding: 8px;
+    }
+
+    .livro__conteudo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .livro__bloco-img {
+        width: 100%;
+        height: 434px;
+    }
+
+    .livro__bloco-descricao {
+        justify-content: center;   
+        width: 100%;
+        height: 250px;
+        margin: 0;
+    }
+
+    .livro__titulo {
+        font-size: 20px;
+    }
+
+    .livro__autor {
+        top: 65px;
+        font-size: 20px;
+    } 
+
+    .livro__preco {
+        top: 130px;
+        font-size: 20px;
+    }
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 1351px) {
+    .livro {
+        width: 300px;
+    }
+}

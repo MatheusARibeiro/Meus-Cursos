@@ -1,0 +1,64 @@
+.banner__caixa {
+    width: 100%;
+    height: 200px;
+    padding: 8px;
+    text-align: center;
+    color: var(--branco);
+    background-color: var(--azul-escuro);
+}
+
+.banner__titulo {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.foto {
+    display: none;
+}
+
+/*---------------------------------------------=================================================----------------------------------------------*/
+/*-------------------------------------------------= ***---RESPONSIVIDADE CABEÇALHO---**** =--------------------------------------------------*/
+/*---------------------------------------------=================================================----------------------------------------------*/
+
+@media screen and (min-width: 531px) {
+    .banner__caixa {
+        padding: 50px 0;
+    } 
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 844px) {
+    .banner__titulo, .banner__texto {
+        display: none;
+    }
+
+    .banner__caixa {
+        padding: 0px;
+        background: none;
+    }
+
+    .banner {
+        width: 100%;
+        height: 200px;
+    }
+
+    .foto {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 531px) {
+    .banner__caixa {
+       height: 265px;
+    }
+
+    .banner {
+        width: 100%;
+        height: 260px;
+    }
+}

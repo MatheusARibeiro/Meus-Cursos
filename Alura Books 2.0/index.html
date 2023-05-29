@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="src/img/Logo.svg">
+        <link rel="stylesheet" href="src/css/0°-style_main.css">
+
+        <title>Alura Books</title>
+    </head>
+
+    <body>
+        <header class="cabecalho">
+            <div class="container">
+                <input class="container__botao" id="menu" type="checkbox"/>
+                <label class="container__rotulo" for="menu"><span class="cabecalho__menu-hamburguer container__imagem"></span></label>
+
+                <ul class="categorias__nav-lista">
+                    <li class="categoria__titulo">Categorias</li>
+                    <li class="categorias__nav-item">
+                        <button class="btn categorias__btn" href="#" id="filtrar_livros_front-end" value="front-end">livros de front-end</button>
+                    </li>
+                    <li class="categorias__nav-item">
+                        <button class="btn categorias__btn" href="#" id="filtrar_livros_back-end" value="back-end">livros de back-end</button>
+                    </li>
+                    <li class="categorias__nav-item">
+                        <button class="btn categorias__btn" href="#" id="filtrar_livros_dados" value="dados">livros de dados</button>
+                    </li>
+                    <li class="categorias__nav-item">
+                        <button class="btn categorias__btn" href="#" id="filtrar_livros_disponiveis" value="disponivel">livros disponíveis</button>
+                    </li>
+                    <li class="categorias__nav-item">
+                        <button class="btn preco categorias__btn" href="#" id="filtrar_livros_preco">ordenar por preço</button>
+                    </li>
+                </ul>
+
+                <img class="cabecalho__logo" src="src/img/Logo.svg" alt="Logo Alura Books">
+                <img class="cabecalho__logo-legenda" src="src/img/Logo_com_legenda-2.svg" alt="Logo Alura Books">
+            </div>
+
+            <ul class="opcoes">
+                <input class="opcoes__botao" id="opcoes__menu" type="checkbox" />
+                <label  class="opcoes__rotulo" for="opcoes__menu"><li class="opcoes__item">Categorias</li></label>
+
+                <ul class="categorias__nav-lista">
+                    <li class="categoria__titulo">Categorias</li>
+                    <li class="categorias__nav-item">
+                        <button class="btn categorias__btn" href="#" id="filtrar_livros_front-end" value="front-end">livros de front-end</button>
+                    </li>
+                    <li class="categorias__nav-item">
+                        <button class="btn categorias__btn" href="#" id="filtrar_livros_back-end" value="back-end">livros de back-end</button>
+                    </li>
+                    <li class="categorias__nav-item">
+                        <button class="btn categorias__btn" href="#" id="filtrar_livros_dados" value="dados">livros de dados</button>
+                    </li>
+                    <li class="categorias__nav-item">
+                        <button class="btn categorias__btn" href="#" id="filtrar_livros_disponiveis" value="disponivel">livros disponíveis</button>
+                    </li>
+                    <li class="categorias__nav-item">
+                        <button class="btn preco categorias__btn" href="#" id="filtrar_livros_preco">ordenar por preço</button>
+                    </li>
+                </ul>
+
+                <li class="opcoes__item">Favoritos</li>
+                <li class="opcoes__item">Minha Estante</li>
+            </ul>
+
+            <div class="container icons">
+                <a class="container__link icon-coracao" href="#"><img src="src/img/Favoritos.svg" alt="icon coração"></a>
+                <a class="container__link" href="#">
+                    <img src="src/img/Compras.svg" alt="icon sacola">
+                    <p class="container__link-texto">Minha Lista</p>
+                </a>
+                <a class="container__link" href="#">
+                    <img src="src/img/Usuario.svg" alt="icon perfil">
+                    <p class="container__link-texto">Perfil</p>
+                </a>
+            </div>
+        </header>
+
+       <main>
+            <article class="banner__caixa">
+                <h2 class="banner__titulo">Melhores Livros de Programação</h2>
+                <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+
+                <div class="banner"><img class="foto" src="src/img/Banner-1.png" alt="banner azul com algorismos"></div>
+            </article>
+
+            <section class="livros" id="livros"></section>
+
+            <section class="valor__total">
+                <div class="livros__disponiveis">
+                    <p class="valor__total-descricao">Todos os livros disponíveis por R$<span class="valor">229,00</span></p>
+                </div>
+            </section>
+       </main>
+
+       <footer class="rodape">
+        <div class="caixa__logo">
+            <img class="logo__Alura-img" src="src/img/Logo.svg" alt="logo do Alura Books">
+            <p class="logo__Alura"><b class="logo__negrito">Alura</b>Books</p>
+        </div>
+            
+            <img class="logo_M" src="src/img/logo_branca-pessoal.png" alt="logo pessoal do programador">
+       </footer>
+
+       <script src="src/js/busca-elementos-da-API.js"></script>
+       <script src="src/js/vitrine-de-livros.js"></script>
+       <script src="src/js/desconto_metodo-map.js"></script>
+       <script src="src/js/categoria_metodo-filter.js"></script>
+       <script src="src/js/calcula-valor-total_metodo-reduce.js"></script>
+       <script src="src/js/ordenar-por-preco_metodo-sort.js"></script>
+    </body>
+</html>
