@@ -1,0 +1,48 @@
+.topicos {
+    padding: 1em 0;
+    text-align: center;
+    background: var(--background-banner);
+}
+
+.topicos__titulo {
+    margin-bottom: 1em;
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--branco);
+}
+
+.topicos__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+.topicos__item {
+    margin: 2em 0.5em;
+}
+
+.topico__link {
+    padding: 1em;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--branco);
+    background-color: var(--laranja);
+}
+
+/*---------------------------------------------=================================================----------------------------------------------*/
+/*--------------------------------------------------= ***---RESPONSIVIDADE TÓPICOS---**** =---------------------------------------------------*/
+/*---------------------------------------------=================================================----------------------------------------------*/
+
+@media screen and (min-width: 1024px) { 
+    .topicos__titulo, .topico__link {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1728px) { 
+    .topicos{
+        padding: 3em 27vw;
+    }
+}
