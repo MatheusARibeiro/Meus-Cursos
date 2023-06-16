@@ -25,4 +25,4 @@ Assim, conseguiremos rodar nosso projeto localmente.
 
 ![](https://i.im.ge/2023/06/17/iENulW.react-capa.jpg)
 
-<img align="center" width="300px" src="img/logo.svg"> <img align="center" width="200px" src="img/logo-branca-2.svg">
+<img align="center" width="400px" src="img/logo.svg"> <img align="center" width="280px" src="img/logo-branca-2.svg">
