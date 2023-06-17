@@ -31,7 +31,7 @@ Assim, conseguiremos rodar nosso projeto localmente.
 
 Observando como é o código da tela a cima, percebe-se como a sintax é totalmente diferente da forma padrão de se escrever.
 
-```
+```js
 import logo from './logo.svg';
 import './App.css';
 
@@ -57,11 +57,38 @@ function App() {
 export default App;
 ```
 
-Isso é o que chamamos de **JSX**, esta é a forma como o React trabalha com a parte visual. Então isso parece um HTML, mas não é. O que o React vai fazer por debaixo nos panos é entender o que é isso e fazer o apende no **DOM**. É como se no modo clássico nós fizessos um <u>**document.createElement** e criássemos cada componente e definíssemos os seus atributos</u>. Então, o JSX é como o React lê isso e transforma em elementos no DOM. Ele parece HTML, mas não é, ele é JSX. 
+Isso é o que chamamos de **JSX**, esta é a forma como o React trabalha com a parte visual. Então isso parece um HTML, mas não é. O que o React vai fazer por debaixo nos panos é entender o que é isso e fazer o apende no **DOM**. É como se no modo clássico nós fizessos um <u>**document.createElement** e criássemos cada componente e definíssemos os seus atributos</u>. Então, o JSX é como o React lê isso e transforma em elementos no DOM. Ele parece HTML, mas não é, ele é JSX.
+
+---
+## A nivel de curiosidade
+
+Navegando mais a fundo dentro do código, na lateral, onde fica a nossa barra de navegação observamos quais de fato nossos itens essenciais:
+
+![](https://i.im.ge/2023/06/18/i3obTK.navegacao-intens-png.jpg) 
+
+Fazendo um breve resumo do proposito de cada item do nosso **src**:
+
+#### **App.js**
+é a pasta onde todos os componentes do site serão comportados.
+#### **style.css**
+é onde está sendo setado uma estilização global do site.
+#### **index.js**
+o que o React faz aqui, ele faz o import do React DOM e cria o root onde vai ficar o componente principal da aplicação, e o que passamos como argumento para esse createRoot é algo que estamos acostumados, um seletor document.getElementByid, então alguém procurou um elemento com o id root.
+```js
+const root = ReactDOM.createRoot(document.getElementById('root'));
+```
+Depois de descobrirmos onde ele fez isso, ele renderizou o nosso App. Esse componente nada mais é do que o nosso "App.js". Então podemos falar que esse "index.js" é o que chamamos de **bootstrap**, o ponto de entrada. Esse é o primeiro arquivo que vai ser executado e que vai renderizar o primeiro componente e iniciar um movimento em cascata.
+
+E o ReactStrictMode é para nos ajudar enquanto Front-End. Ele em produção não fará nada, mas em ambiente de desenvolvimento, o fato dele estar aqui vai nos ajudar a prevenir erros e ter mensagens de erros mais amigáveis.
+
+```js
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+```
 
 ---
 ---
-
 <img align="center" width="400px" src="img/logo.svg"> <img align="center" width="280px" src="img/logo-branca-2.svg">
 
 ---
