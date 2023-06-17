@@ -27,7 +27,7 @@ Assim, conseguiremos rodar nosso projeto localmente.
 
 ---
 
-## Por dentro do React
+## Por dentro do React.
 
 Observando como é o código da tela a cima, percebe-se como a sintax é totalmente diferente da forma padrão de se escrever.
 
