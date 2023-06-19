@@ -87,9 +87,10 @@ E o ReactStrictMode é para nos ajudar enquanto Front-End. Ele em produção nã
   </React.StrictMode>
 ```
 Falando na pasta **public**, A ideia do "public" é que, quando criarmos e formos publicar em algum lugar, tudo que chamamos de "imagem estáticas" será disponibilizado colocando dentro da pasta "public".
+
 ---
 ---
-<img align="center" width="400px" src="img/logo.svg"> <img align="center" width="280px" src="img/logo-branca-2.svg">
+<img align="center" width="400px" src="../img/logo.svg"> <img align="center" width="280px" src="../img/logo-branca-2.svg">
 
 ---
 ---

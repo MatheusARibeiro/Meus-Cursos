@@ -128,7 +128,7 @@ Mas como foi colocado "index.js" isso não é necessario.
 
 ---
 ---
-<img align="center" width="400px" src="img/logo.svg"> <img align="center" width="280px" src="img/logo-branca-2.svg">
+<img align="center" width="400px" src="../img/logo.svg"> <img align="center" width="280px" src="../img/logo-branca-2.svg">
 
 ---
 ---
